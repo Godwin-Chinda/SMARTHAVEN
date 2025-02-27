@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartHaven Register</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <img src="Images/logo/smarthaven logo.png" alt="SmartHaven Logo" />
+      </div>
+      <h1>SmartHaven</h1>
+    </div>
+
+    <div class="register-banner">
+      <h2>Register</h2>
+    </div>
+
+    <!-- Registration Container -->
+    <div class="container">
+      <h3>Create your own account</h3>
+      <form id="registerForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="input-field" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-field" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" class="input-field" />
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          class="input-field"
+        
+        />
+
+        <!-- Account Type -->
+        <div class="account-type">
+          <p>Account Type</p>
+          <label>
+            <input
+              type="radio"
+              name="accountType"
+              value="Individual"
+            
+            />
+            Individual Searching for Property
+          </label>
+
+          <label>
+            <input type="radio" name="accountType" value="Owner" />
+            Property Owner
+          </label>
+        </div>
+
+        <button type="submit">Register Now</button>
+      </form>
+
+      <div class="terms">
+        <p>
+          By registering you accept our
+          <a href="#">Terms of Use</a> and <a href="#">Privacy</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <!-- About Us -->
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>
+          SmartHaven is a digital platform <br> revolutionizing the housing market in <br>
+          urban Nigeria. Our mission is to make <br> the process of finding and
+          managing <br> rental properties transparent, secure, <br> and efficient.<br /><br />
+          Your Purpose: “We connect tenants <br> with verified landlords, ensuring
+          trust <br> and ease in every interaction.”
+        </p>
+        <br><br>
+        <button>Learn more</button>
+      </div>
+
+      <!-- Market Trends-->
+      <div class="footer-column">
+        <h3>Market Trends</h3>
+        <br>
+        <a href="#">Property Demand Trends</a>
+        <a href="#">Average Property Prices</a>
+        <br>
+
+        <h3 style="margin-top: 20px">Popular Property</h3>
+        <br>
+        <a href="#">Flats for rent in Abuja</a>
+        <a href="#">Houses for rent in Abuja</a>
+        <a href="#">Houses for sale in Abuja</a>
+        <a href="#">Land for sale in Abuja</a>
+        <a href="#">Mini flats for rent in Abuja</a>
+        <a href="#">Self contain for rent in Abuja</a>
+        <a href="#">Flats for rent in Lagos</a>
+        <a href="#">Houses for rent in Lagos</a>
+        <a href="#">Houses for sale in Lagos</a>
+        <a href="#">Land for sale in Lagos</a>
+        <a href="#">Mini flats for rent in Lagos</a>
+        <a href="#">Self contain for rent in Lagos</a>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="footer-column">
+        <h3>Useful Links</h3>
+        <br>
+        <a href="#">Property Blog</a>
+        <a href="#">Area Guides</a>
+        <a href="#">Contact Us</a>
+        <br /> <br>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">FAQs</a>
+      </div>
+
+      <!-- Follow Us and Advertise -->
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-tiktok"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fas fa-home"></i>
+        </div>
+        <br /> <br>
+        <h3>Advertise With Us</h3>
+        <br>
+        <a href="#">Advertise/Market Your Property</a>
+        <a href="#">Featured Real Estate Companies</a>
+        <a href="#">Place Banner Adverts</a>
+      </div>
+    </div>
+
+    <script src="register.js"></script>
+  </body>
+</html>

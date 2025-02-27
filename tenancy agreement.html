@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartHaven Tenancy Agreement</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="tenancy agreement.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <img src="Images/logo/smarthaven logo.png" alt="Smart Haven Logo" />
+      </div>
+      <h1>SmartHaven</h1>
+      <nav class="nav-links">
+        <a href="#" style="left: 943px">FOR SALE</a>
+        <a href="#" style="left: 1031px">FOR RENT</a>
+        <a href="#" style="left: 1124px">MY ACCOUNT</a>
+      </nav>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="banner">
+      <h2>Book trusted movers directly through Smart Haven</h2>
+      <img src="Images/Picture/van.png" alt="Moving Truck" />
+    </div>
+
+    <div class="agreement-header">
+      <span>Create Tenancy Agreement</span>
+    </div>
+
+    <div class="container">
+      <h3>Document details</h3>
+
+      <div class="tenant-section">
+        <h4 class="section-title">About the Tenant</h4>
+        <hr />
+
+        <div class="subheading">Details about the tenant.</div>
+
+        <form class="tenant-form">
+          <div class="form-group">
+            <label for="tenant-name">Tenant Name</label>
+            <input type="text" id="tenant-name" />
+          </div>
+          <div class="form-group">
+            <label for="tenant-address">Tenant Current Address</label>
+            <input type="text" id="tenant-address" />
+          </div>
+        </form>
+      </div>
+
+      <div class="section">
+        <h4 class="section-title">Tenancy Details</h4>
+        <hr />
+        <div class="subheading">
+          Please fill out the details of the tenancy. These details will be
+          displayed on the agreement.
+        </div>
+        <form class="form-grid">
+          <div class="form-group">
+            <label for="tenancy-term">Tenancy Term</label>
+            <input type="text" id="tenancy-term" />
+          </div>
+          <div class="form-group">
+            <label for="tenancy-start">Tenancy Start</label>
+            <input type="text" id="tenancy-start" />
+          </div>
+          <div class="form-group">
+            <label for="tenancy-end">Tenancy End</label>
+            <input type="text" id="tenancy-end" />
+          </div>
+        </form>
+      </div>
+
+      <div class="property-container">
+        <h4 class="section-title">About the Property</h4>
+        <hr />
+        <p class="subheading">Please fill in the details of the property.</p>
+
+        <form class="property-form">
+          <div class="form-group">
+            <label>Property Description</label>
+            <input class="enlarge-input" type="text" />
+          </div>
+
+          <div class="form-group currency-container">
+            <label>Annual Rent</label>
+            <span>₦</span>
+            <input type="text" class="currency-input" />
+          </div>
+
+          <div class="form-group">
+            <label>Property Address</label>
+            <input class="enlarge-input" type="text" />
+          </div>
+
+          <div class="form-group currency-container">
+            <label>Security Deposit</label>
+            <span>₦</span>
+            <input type="text" class="currency-input" />
+          </div>
+        </form>
+      </div>
+
+      <div class="landlord-section">
+        <h4 class="section-title">About the Landlord</h4>
+        <hr />
+        <p class="subheading">Details about the landlord.</p>
+
+        <form class="form-grid">
+          <div class="form-group">
+            <label for="landlord-name">Landlord Name</label>
+            <input type="text" id="landlord-name" />
+          </div>
+          <div class="form-group">
+            <label for="landlord-address">Landlord Address</label>
+            <input type="text" id="landlord-address" />
+          </div>
+        </form>
+      </div>
+
+      <div class="fees-container">
+        <h4 class="section-title">Fees</h4>
+        <hr />
+        <p class="subheading">Please enter details of any applicable fees.</p>
+
+        <form class="fees-form">
+          <div class="input-group currency-container">
+            <label for="legal-fee">Legal Fee</label>
+            <span>₦</span>
+            <input type="text" id="legal-fee" />
+          </div>
+          <div class="input-group currency-container">
+            <label for="agency-fee">Agency Fee</label>
+            <span>₦</span>
+            <input type="text" id="agency-fee" />
+          </div>
+        </form>
+      </div>
+
+      <div class="terms-container">
+        <h4 class="section-title">Terms and Conditions</h4>
+        <div class="terms-box">
+          <input type="checkbox" id="accept_terms" />
+          <label for="accept_terms">
+            By ticking this box you are accepting our
+            <a href="#">terms and conditions</a>. Please read them carefully
+            before you proceed.
+          </label>
+        </div>
+        <div class="button-group">
+          <button class="btn draft">Save as Draft</button>
+          <button class="btn preview">Save and Preview Document</button>
+          <button class="btn pay">Create & Pay</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-menu">
+      <a href="#">Home</a>
+      <a href="#">Account</a>
+      <a href="#">Documents</a>
+      <a href="#">Create Tenancy Agreement</a>
+    </div>
+
+    <div class="footer">
+      <!-- About Us -->
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>
+          SmartHaven is a digital platform <br />
+          revolutionizing the housing market in <br />
+          urban Nigeria. Our mission is to make <br />
+          the process of finding and managing <br />
+          rental properties transparent, secure, <br />
+          and efficient.<br /><br />
+          Your Purpose: “We connect tenants <br />
+          with verified landlords, ensuring trust <br />
+          and ease in every interaction.”
+        </p>
+        <br /><br />
+        <button>Learn more</button>
+      </div>
+
+      <!-- Market Trends-->
+      <div class="footer-column">
+        <h3>Market Trends</h3>
+        <br />
+        <a href="#">Property Demand Trends</a>
+        <a href="#">Average Property Prices</a>
+        <br />
+
+        <h3 style="margin-top: 20px">Popular Property</h3>
+        <br />
+        <a href="#">Flats for rent in Abuja</a>
+        <a href="#">Houses for rent in Abuja</a>
+        <a href="#">Houses for sale in Abuja</a>
+        <a href="#">Land for sale in Abuja</a>
+        <a href="#">Mini flats for rent in Abuja</a>
+        <a href="#">Self contain for rent in Abuja</a>
+        <a href="#">Flats for rent in Lagos</a>
+        <a href="#">Houses for rent in Lagos</a>
+        <a href="#">Houses for sale in Lagos</a>
+        <a href="#">Land for sale in Lagos</a>
+        <a href="#">Mini flats for rent in Lagos</a>
+        <a href="#">Self contain for rent in Lagos</a>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="footer-column">
+        <h3>Useful Links</h3>
+        <br />
+        <a href="#">Property Blog</a>
+        <a href="#">Area Guides</a>
+        <a href="#">Contact Us</a>
+        <br />
+        <br />
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">FAQs</a>
+      </div>
+
+      <!-- Follow Us and Advertise -->
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-tiktok"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fas fa-home"></i>
+        </div>
+        <br />
+        <br />
+        <h3>Advertise With Us</h3>
+        <br />
+        <a href="#">Advertise/Market Your Property</a>
+        <a href="#">Featured Real Estate Companies</a>
+        <a href="#">Place Banner Adverts</a>
+      </div>
+    </div>
+
+    <script src="tenancy agreement.js"></script>
+  </body>
+</html>
