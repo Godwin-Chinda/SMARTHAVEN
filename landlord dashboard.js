@@ -1,13 +1,3 @@
-// // Handle the closing of the notification
-// document.addEventListener("DOMContentLoaded", function () {
-//   const notification = document.querySelector(".notification");
-//   const closeButton = document.querySelector(".close-btn");
-
-//   closeButton.addEventListener("click", function () {
-//     notification.style.display = "none";
-//   });
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
   // Notification Close Button
   const notification = document.querySelector(".notification");
