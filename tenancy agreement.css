@@ -309,7 +309,75 @@ h4 {
   margin-bottom: 20px;
 }
 
+.agreement-container { 
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
 
+.options-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.option-item:first-child {
+  width: 100%;
+}
+
+.option-item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 35px;
+}
+
+.option-item input {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.option-item label {
+  font-size: 15px;
+  color: #2F3D46;
+  font-weight: 400;
+}
+
+.option-item small {
+  display: block;
+  font-size: 11px;
+  color: #C0C0C0;
+  margin-top: 10px;
+}
+
+.fields-group {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-top: -480px;
+}
+
+.field-item {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.field-item label {
+  font-size: 14px;
+  display: block;
+  margin-top: 20px;
+  color: #666666;
+  font-weight: 400;
+}
+
+.field-item input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  margin-top: 15px;
+}
 
 .terms-box {
   display: flex;
@@ -351,7 +419,7 @@ h4 {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .draft {
